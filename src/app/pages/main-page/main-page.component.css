@@ -26,3 +26,36 @@
     margin: 25px 10%;
 
 }
+
+
+
+.card {
+    width: calc(80% - 20px);
+    margin: 10px 10%;
+    padding: 10px;
+    display: flex;
+    background-color: #fbfbfe;
+    height: 30vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .info {
+    width: 60%;
+    height: 100%;
+    margin: 0px 5%;
+    overflow: hidden;
+}
+
+.card .info h2{
+    margin: 10px;
+}
+
+.card .info p{
+    margin: 10px;    
+}

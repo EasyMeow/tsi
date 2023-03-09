@@ -20,4 +20,8 @@ export class HttpService {
   getAllBySeach(search: string) {
     return this.http.get<Article[]>(this.baseURL + "/Article/getBySearch/" + search)
   }
+
+  getById(id: number) {
+    return this.http.get<Article>(this.baseURL + "/Article/getById/" + id)
+  }
 }
