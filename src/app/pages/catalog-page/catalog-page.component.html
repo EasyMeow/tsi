@@ -1,0 +1,32 @@
+<navbar/>
+<div class="search-part">
+    <div class="check-box-part">
+
+        <div class="filter">
+            <div class="filter-item" *ngFor = "let pet of pets">
+                <input type = "checkbox">
+                <p>{{pet}}</p>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="filter-item" *ngFor = "let protection of protections">
+                <input type = "checkbox">
+                <p>{{protection}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <h1>Поиск</h1>
+        <input type="text" placeholder="название">
+        <button>Найти</button>
+    </div>
+    
+</div>
+<div class="card" *ngFor ="let article of articles">
+    <img src="{{article.pictureUrl}}">
+    <div class="info">
+        <h2>{{article.title}}</h2>
+        <p>{{article.minitext}}</p>  
+    </div>        
+</div>
+<app-footer/>

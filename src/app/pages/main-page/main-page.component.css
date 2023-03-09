@@ -1,0 +1,28 @@
+.container {
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    background-color: #fbfbfe;
+    height: 40vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .info {
+    width: 50%;
+    margin: 0px 5%;
+    height: 100%;
+}
+.container .info h1 {
+    margin: 10px 10%;
+}
+
+.container .info p {
+    margin: 25px 10%;
+
+}

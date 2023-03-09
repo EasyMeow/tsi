@@ -1,0 +1,93 @@
+.search-part {
+    width: calc(80% - 20px);
+    margin: 10px 10%;
+    padding: 10px;
+    display: flex;
+    background-color: #fbfbfe;
+    height: 30vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.check-box-part {
+    width: 25%;
+    height: 100%;
+}
+
+.search {
+    width: 70%;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.search h1 {
+    padding: 10px;   
+}
+
+.search input[type = "text"] {
+    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.search button {
+    background-color: antiquewhite;
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color:bisque;
+}
+
+.filter {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px ;
+}
+
+.filter-item {
+    display: flex;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.filter-item p {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.card {
+    width: calc(80% - 20px);
+    margin: 10px 10%;
+    padding: 10px;
+    display: flex;
+    background-color: #fbfbfe;
+    height: 30vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .info {
+    width: 60%;
+    height: 100%;
+    margin: 0px 5%;
+    overflow: hidden;
+}
+
+.card .info h2{
+    margin: 10px;
+}
+
+.card .info p{
+    margin: 10px;    
+}
