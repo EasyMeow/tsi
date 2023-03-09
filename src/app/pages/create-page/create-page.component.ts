@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { lastValueFrom } from 'rxjs';
 import { Article } from 'src/app/models/article';
 import { HttpService } from 'src/app/services/http/http.service';
 
@@ -31,6 +32,7 @@ export class CreatePageComponent {
   ]
 
   async save() {
-    this.httpService.createArticle(this.article)
+    await lastValueFrom(this.httpService.createArticle(this.article))
+    alert("Статья сохранена")
   }
 }
