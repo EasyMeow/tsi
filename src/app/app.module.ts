@@ -9,6 +9,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
+import { ArticlePageComponent } from './pages/article-page/article-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CatalogPageComponent } from './pages/catalog-page/catalog-page.componen
     MainPageComponent,
     NavbarComponent,
     FooterComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
+    ArticlePageComponent
   ],
   imports: [
     BrowserModule,

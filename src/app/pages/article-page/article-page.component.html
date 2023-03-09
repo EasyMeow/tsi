@@ -1,0 +1,11 @@
+<navbar/>
+<div *ngIf= "article">
+    <div class="title-block">
+        <img src="{{article.pictureUrl}}" alt="">
+        <h1>{{article.title}}</h1>
+    </div>
+    <p>{{article.text}}</p>
+</div>
+
+
+<app-footer/>
