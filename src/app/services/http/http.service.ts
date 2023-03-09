@@ -24,4 +24,8 @@ export class HttpService {
   getById(id: number) {
     return this.http.get<Article>(this.baseURL + "/Article/getById/" + id)
   }
+
+  createArticle(article: Article) {
+    return this.http.post<boolean>(this.baseURL + "/Article", article)
+  }
 }

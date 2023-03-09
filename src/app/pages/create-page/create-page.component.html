@@ -1,0 +1,42 @@
+<navbar/>
+
+<div class="drop-block">
+    <div class="block">
+        <p>Животное</p>
+        <select [(ngModel)]="article.type1">
+            <option *ngFor="let p of pets" [ngValue]="p">{{p}}</option>
+        </select>
+    </div>
+
+    <div class="block">
+        <p>Уход</p>
+        <select [(ngModel)]="article.type2">
+            <option *ngFor="let p of protections" [ngValue]="p">{{p}}</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="item">
+    <p class="normal">Название статьи</p>
+    <input type="text" [(ngModel)] = "article.title">
+</div>
+
+<div class="item">
+    <p class="normal">Ссылка на картинку</p>
+    <input type="text" [(ngModel)] = "article.pictureUrl">
+</div>
+
+<div class="big-item">
+    <p class="normal">Описание</p>
+    <textarea [(ngModel)]="article.miniText"></textarea>
+</div>
+
+<div class="big-item">
+    <p class="normal">Текст статьи</p>
+    <textarea [(ngModel)]="article.text"></textarea>
+</div>
+
+<button class="save-button" (click)="save()">Сохранить</button>
+
+<app-footer/>

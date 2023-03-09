@@ -1,0 +1,82 @@
+.drop-block {
+    width: calc(60% - 20px);
+    margin: 10px 20%;
+    padding: 10px;
+    display: flex;
+    background-color: #fbfbfe;
+    height: 10vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.block {
+    width: calc(100% / 2);
+    height: 100%;
+}
+
+.block p {
+    padding: 10px;
+}
+.block select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.normal {
+    padding: 10px;
+}
+
+.item {
+    width: calc(60% - 20px);
+    height: 100px;
+    margin: 10px 20%;
+    padding: 10px;
+    background-color: #fbfbfe;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);    
+}
+
+
+.item input[type = "text"],.item input[type = "number"] {
+    padding: 10px;
+    font-size: 15px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+
+.big-item {
+    width: calc(60% - 20px);
+    height: 300px;
+    margin: 10px 20%;
+    padding: 10px;
+    background-color: #fbfbfe;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);    
+}
+
+.big-item textarea {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    height: 240px;
+    outline: none;
+}
+
+.save-button {    
+    margin: 10px 30%;
+    height: 50px;
+    width: 40%;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);   
+    
+}
+.save-button:hover {
+    background-color: bisque;
+}
+
+
