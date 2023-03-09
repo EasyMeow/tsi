@@ -4,7 +4,7 @@
     padding: 10px;
     display: flex;
     background-color: #fbfbfe;
-    height: 30vh;
+    height: 35vh;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -41,7 +41,14 @@
     border-radius: 5px;
 }
 
-.search button:hover {
+.check-box-part button {
+    background-color: antiquewhite;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search button:hover,.check-box-part button:hover{
     background-color:bisque;
 }
 

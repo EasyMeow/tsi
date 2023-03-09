@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Article } from 'src/app/models/article';
+import { Filter } from 'src/app/models/filter';
 
 @Injectable({
   providedIn: 'root'
@@ -27,5 +28,9 @@ export class HttpService {
 
   createArticle(article: Article) {
     return this.http.post<boolean>(this.baseURL + "/Article", article)
+  }
+
+  getArticlesByFilter(filters: Filter[]) {
+    return this.http.post<Article[]>(this.baseURL +"/Article/filters", filters)
   }
 }

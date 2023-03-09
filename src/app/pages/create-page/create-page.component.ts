@@ -28,7 +28,7 @@ export class CreatePageComponent {
   ]
 
   protections = [
-    "За глазами", "За ушами", "За шерстию"
+    "За глазами", "За ушами", "За шерстью"
   ]
 
   async save() {

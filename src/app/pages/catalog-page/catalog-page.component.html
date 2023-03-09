@@ -2,18 +2,13 @@
 <div class="search-part">
     <div class="check-box-part">
 
-        <div class="filter">
-            <div class="filter-item" *ngFor = "let pet of pets">
-                <input type = "checkbox">
-                <p>{{pet}}</p>
+        <div class="filter" *ngFor = "let filter of filters">
+            <div class="filter-item" *ngFor = "let pet of filter.items">
+                <input type = "checkbox"  [(ngModel)] = "pet.isChosen">
+                <p>{{pet.name}}</p>
             </div>
-        </div>
-        <div class="filter">
-            <div class="filter-item" *ngFor = "let protection of protections">
-                <input type = "checkbox">
-                <p>{{protection}}</p>
-            </div>
-        </div>
+        </div>        
+        <button>Отфильтровать</button>
     </div>
     <div class="search">
         <h1>Поиск</h1>

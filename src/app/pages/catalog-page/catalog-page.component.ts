@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
 import { Article } from 'src/app/models/article';
+import { Filter } from 'src/app/models/filter';
 import { HttpService } from 'src/app/services/http/http.service';
 
 @Component({
@@ -14,13 +15,23 @@ export class CatalogPageComponent {
     private httpService: HttpService
   ) { }
 
-
-  pets = [
-    "Коты", "Собаки", "Грызуны"
-  ]
-
-  protections = [
-    "За глазами", "За ушами", "За шерстию"
+  filters: Filter[] = [
+    {
+      name: "pets",
+      items: [
+        { isChosen: true, name: "Коты" },
+        { isChosen: true, name: "Собаки" },
+        { isChosen: true, name: "Грызуны" }
+      ]
+    },
+    {
+      name: "protections",
+      items: [
+        { isChosen: true, name: "За глазами" },
+        { isChosen: true, name: "За ушами" },
+        { isChosen: true, name: "За шерстью" }
+      ]
+    },
   ]
 
   articles: Article[] = []
@@ -36,6 +47,10 @@ export class CatalogPageComponent {
       this.articles = await lastValueFrom(this.httpService.getAllBySeach(this.search))
     } else {
       this.articles = await lastValueFrom(this.httpService.getAll())
-    }    
-  }  
+    }
+  }
+
+  async filter() {
+    this.articles = await lastValueFrom(this.httpService.getArticlesByFilter(this.filters))
+  }
 }
