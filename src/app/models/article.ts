@@ -1,7 +1,7 @@
 export interface Article{
     id?: number,
     title: string,
-    minitext: string,
+    miniText: string,
     text: string,
     pictureUrl: string
 }

@@ -16,4 +16,8 @@ export class HttpService {
   getAll() {
     return this.http.get<Article[]>(this.baseURL + "/Article")
   }
+
+  getAllBySeach(search: string) {
+    return this.http.get<Article[]>(this.baseURL + "/Article/getBySearch/" + search)
+  }
 }

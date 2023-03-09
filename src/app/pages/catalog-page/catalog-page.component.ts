@@ -24,9 +24,15 @@ export class CatalogPageComponent {
   ]
 
   articles: Article[] = []
+  search = ""
 
 
   async ngOnInit() {
     this.articles = await lastValueFrom(this.httpService.getAll())
   }
+
+  async getSearch() {
+    this.articles = await lastValueFrom(this.httpService.getAllBySeach(this.search))
+  }
+  
 }
