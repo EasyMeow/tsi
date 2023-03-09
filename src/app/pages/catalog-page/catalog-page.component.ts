@@ -32,7 +32,10 @@ export class CatalogPageComponent {
   }
 
   async getSearch() {
-    this.articles = await lastValueFrom(this.httpService.getAllBySeach(this.search))
-  }
-  
+    if (this.search != "") {
+      this.articles = await lastValueFrom(this.httpService.getAllBySeach(this.search))
+    } else {
+      this.articles = await lastValueFrom(this.httpService.getAll())
+    }    
+  }  
 }
